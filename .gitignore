@@ -8,3 +8,4 @@ Thumbs.db
 # Local dev servers / logs
 *.log
 node_modules/
+.vercel
