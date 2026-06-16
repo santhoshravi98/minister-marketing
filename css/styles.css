@@ -1,0 +1,29 @@
+/* ============================================================
+   Minister — Marketing landing page
+   Base resets, keyframe animations, and interactive :hover states.
+   Layout/visual styling lives inline in index.html (preserved
+   exactly from the approved design for pixel fidelity).
+   ============================================================ */
+
+*{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  html,body{ margin:0; padding:0; background:#eaf2fa; }
+  @keyframes floatUp{ from{transform:translateY(8px);} to{transform:translateY(-8px);} }
+  @keyframes shine{ 0%{ transform:translateX(-130%);} 55%{ transform:translateX(240%);} 100%{ transform:translateX(240%);} }
+  @keyframes drift{ from{transform:translateX(-10px);} to{transform:translateX(20px);} }
+  @keyframes sparkleTw{ 0%,100%{ opacity:0.12; transform:scale(0.55) rotate(0deg);} 50%{ opacity:0.95; transform:scale(1.1) rotate(45deg);} }
+  @keyframes floatMote{ 0%{ transform:translateY(12px); opacity:0;} 45%{ opacity:0.75;} 100%{ transform:translateY(-26px); opacity:0;} }
+  @keyframes sway{ from{ transform:rotate(-2.5deg);} to{ transform:rotate(2.5deg);} }
+  @keyframes feedScroll{ from{transform:translateY(0);} to{transform:translateY(-50%);} }
+  @keyframes stageFeed{ 0%{opacity:0;} 7%,42%{opacity:1;} 49%,100%{opacity:0;} }
+  @keyframes stageStop{ 0%,44%{opacity:0;} 51%,72%{opacity:1;} 78%,100%{opacity:0;} }
+  @keyframes stageCalm{ 0%,74%{opacity:0;} 80%,96%{opacity:1;} 100%{opacity:0;} }
+  @keyframes sigilSlam{ 0%,44%{transform:scale(0.2);} 51%{transform:scale(1.15);} 57%{transform:scale(1);} 72%,100%{transform:scale(1);} }
+  @keyframes reel{ 0%{transform:translateY(0);} 42%{transform:translateY(-5em);} 49%{transform:translateY(-5em);} 50%{transform:translateY(0);} 100%{transform:translateY(0);} }
+
+/* ---------- Interactive hover states ---------- */
+.hv1, .hv2, .hv3 { transition: color .18s ease, filter .18s ease, background .18s ease; }
+
+.hv1:hover{ color:#f6efe2 !important; }
+.hv2:hover{ filter:brightness(1.04) !important; }
+.hv3:hover{ filter:brightness(1.2) !important; }
